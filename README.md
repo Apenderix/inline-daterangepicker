@@ -2,6 +2,8 @@
 
 Angular.js directive with inline by twinning [Angular DaterangePicker](https://github.com/fragaria/angular-daterangepicker).
 
+![alt text](http://prntscr.com/j1xk5a)
+
 ## Installation
 
 Please reference of [here](https://github.com/fragaria/angular-daterangepicker)

@@ -6,20 +6,20 @@
     <title>Daterange picker example</title>
 
     <!-- bower:css -->
-    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_install/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="libs/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="bower_install/bootstrap-daterangepicker/daterangepicker.css" />
     <!-- endbower -->
 
 </head>
 
 <body>
     <!-- bower:js -->
-    <script src="libs/jquery/dist/jquery.js"></script>
-    <script src="libs/angular/angular.js"></script>
-    <script src="libs/angular-messages/angular-messages.js"></script>
-    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="libs/moment/moment.js"></script>
+    <script src="bower_install/jquery/dist/jquery.js"></script>
+    <script src="bower_install/angular/angular.js"></script>
+    <script src="bower_install/angular-messages/angular-messages.js"></script>
+    <script src="bower_install/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_install/moment/moment.js"></script>
     <script src="./daterangepicker++.js"></script>
     <!-- endbower -->
 
@@ -48,19 +48,8 @@
                            ng-model="date2" required/>
                         <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-down"></span></span>
                     </div>
-                </div>
-                <button type="button" class="btn" ng-click="setStartDate()">Set Start Date</button>
-                <button type="button" class="btn" ng-click="setRange()">Set Range</button>
-                <button type="button" class="btn" ng-click="showMessage()">Show</button>
-            </form>
-
-            <div class="row">
-                <h4>Dates:</h4>
-                <div class="col-md-12 well">
-                    {{date}}<br>
-                    {{date2}}<br>
-                </div>
-            </div>
+                </div>                
+            </form>            
         </div>
     </div>
 </div>
@@ -98,27 +87,7 @@ exampleApp.controller('TestCtrl', function($scope) {
             'Last 7 Days': [moment().subtract(6, 'days'), moment()],
             'Last 30 Days': [moment().subtract(29, 'days'), moment()]
         }
-    };
-
-    $scope.setStartDate = function () {
-        $scope.date.startDate = moment().subtract(365, "days");
-    };
-
-    $scope.setRange = function () {
-        $scope.date = {
-            startDate: moment().subtract(5, "days"),
-            endDate: moment()
-        };
-    };
-
-    $scope.showMessage = function () {
-
-    }
-
-    // //Watch for date changes
-    // $scope.$watch('date', function(newDate) {
-    //     console.log('New date set: ', newDate);
-    // }, false);
+    };   
 
 });
 
