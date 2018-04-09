@@ -1,5 +1,5 @@
 .always-open :first-child {
-    position: relative !important;    
+    position: relative !important;
 }
 
 .always-open :not(.fa):first-child::before {
@@ -8,17 +8,17 @@
     content: none;
 }
 
-td.start-date {    
-    background: linear-gradient(-45deg,#fa6d64 50%, transparent 50%) !important;        
+td.start-date {
+    background: linear-gradient(-46deg,#fa6d64 50%, transparent 50%) !important;
     color: #333 !important;
     border-color: white !important;
 }
 
 td.end-date {
-    background: linear-gradient(135deg, #fa6d64 50%, transparent 50%);        
+    background: linear-gradient(134deg, #fa6d64 50%, transparent 50%);
     color: #333 !important;
     border-bottom-color: white !important;
-    border-right-color: white !important;   
+    border-right-color: white !important;
 }
 
 td.in-range {
