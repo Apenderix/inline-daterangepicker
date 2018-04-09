@@ -6,7 +6,7 @@
     "sunrise1986"
   ],
   "style": [
-    "./style.css",
+    "./style.css"
   ],
   "description": "Angular daterangepicker with inline function",
   "private": false,
