@@ -5,6 +5,9 @@
   "authors": [
     "sunrise1986"
   ],
+  "style": [
+    "./style.css",
+  ],
   "description": "Angular daterangepicker with inline function",
   "private": false,
   "dependencies": {
