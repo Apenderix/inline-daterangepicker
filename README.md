@@ -1,3 +1,5 @@
+# not done by me, just saving this here
+
 # Date Range Picker with inline for Angular and Bootstrap
 
 Angular.js directive with inline by twinning [Angular DaterangePicker](https://github.com/fragaria/angular-daterangepicker).
@@ -36,7 +38,7 @@ Prepare model in your controller. The model **must** have `startDate` and `endDa
 
 ```
 exampleApp.controller('TestCtrl', function ($scope) {
-	$scope.datePicker.date = {startDate: null, endDate: null};
+  $scope.datePicker.date = {startDate: null, endDate: null};
 }
 ```
 
